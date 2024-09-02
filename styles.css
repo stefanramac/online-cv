@@ -1,75 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('forest.jpg'); /* Use the uploaded image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     color: #fff;
 }
 
-header {
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+/* Positioning Stefan Ramač and navigation at the very top */
+.header-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 3em;
+.header-left h1 {
     margin: 0;
-    color: #FFA500; /* Orange color for contrast */
+    font-size: 2.5em;
+    font-family: 'Pacifico', cursive; /* Signature-like font */
+    color: #fff;
+    line-height: 1.2;
 }
 
-header p {
+.header-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.header-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-right ul li {
+    margin-left: 20px;
+}
+
+.header-right ul li a {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2em;
-    color: #FFD700; /* Lighter orange */
 }
 
-section {
+.header-right ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section with background image */
+.hero-section {
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
 }
 
-h2 {
-    font-size: 2em;
-    border-bottom: 2px solid #FFA500; /* Orange underline */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Content section */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.content-section h3 {
+    font-size: 2.5em;
     color: #FFA500;
 }
 
-.job h3, p, ul {
+/* Job title and details */
+.job-title {
+    color: #FFA500; /* Main job title color - orange */
+    font-size: 1.5em;
     margin: 10px 0;
 }
 
-.job h3 {
-    font-size: 1.5em;
-    color: #FFA500; /* Orange for job titles */
+.job-date {
+    color: #FFCC99; /* Lighter shade of orange for date */
+    font-size: 1.2em;
+}
+
+.job-location {
+    color: #FF9966; /* Medium shade of orange for location */
+    font-size: 1.2em;
+}
+
+.job-company {
+    color: #FF6600; /* Darker shade of orange for company */
+    font-size: 1.2em;
 }
 
 ul {
     list-style-type: square;
     padding-left: 20px;
-    color: #FFD700; /* Lighter orange for lists */
+    color: #fff;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent footer */
-    color: #FFA500;
+    background-color: #1a1a1a;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-footer a {
-    color: #FFA500;
-    text-decoration: none;
+/* Link styles */
+a {
+    color: #ff6600;
 }
 
-footer a:hover {
-    text-decoration: underline;
+a:hover {
+    color: #ff8533;
 }

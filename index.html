@@ -3,86 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefan Ramač - Professional Experience</title>
+    <title>Stefan Ramač - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Stefan Ramač</h1>
-        <p>WebMethods Developer | Integration Architect | Web Developer</p>
+    <!-- Stefan Ramač i navigacioni bar iznad hero sekcije -->
+    <div class="header-left">
+        <h1>Stefan<br>Ramač</h1>
+    </div>
+    <nav class="header-right">
+        <ul>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h2>WEB DEVELOPER</h2>
+                <p>Welcome to my online CV</p>
+            </div>
+        </div>
     </header>
+
+    <section id="experience" class="content-section">
+        <h3>Experience</h3>
+        
+        <p class="job-title">WebMethods Developer <span class="job-company">at TNation</span></p>
+        <p><span class="job-date">August 2024 - Present</span> | <span class="job-location">Belgrade, Serbia</span></p>
+        <ul>
+            <li>Developed and maintained REST and SOAP web services to support business needs.</li>
+            <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
+            <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
+            <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
+            <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
+            <li>Troubleshot and resolved integration issues to maintain system integrity and performance.</li>
+        </ul>
     
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <div class="job">
-            <h3>WebMethods Developer at TNation</h3>
-            <p>August 2024 - Present | Belgrade, Serbia</p>
-            <ul>
-                <li>Developed and maintained REST and SOAP web services to support business needs.</li>
-                <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
-                <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
-                <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
-                <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
-                <li>Troubleshot and resolved integration issues to maintain system integrity and performance.</li>
-            </ul>
-        </div>
+        <p class="job-title">WebMethods Developer <span class="job-company">at EPICO-IT</span></p>
+        <p><span class="job-date">August 2024 - Present</span> | <span class="job-location">Copenhagen, Denmark</span></p>
+        <ul>
+            <li>Developed and maintained REST and SOAP web services to support business needs.</li>
+            <li>Utilized JSON and XML for effective data interchange between different systems.</li>
+            <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
+            <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
+            <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
+            <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
+        </ul>
 
-        <div class="job">
-            <h3>WebMethods Developer at EPICO-IT</h3>
-            <p>August 2024 - Present | Copenhagen, Denmark</p>
-            <ul>
-                <li>Developed and maintained REST and SOAP web services to support business needs.</li>
-                <li>Utilized JSON and XML for effective data interchange between different systems.</li>
-                <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
-                <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
-                <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
-                <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <h3>Integration Platform Developer at NLB DigIT</h3>
-            <p>December 2023 - August 2024 | Belgrade, Serbia</p>
-            <ul>
-                <li>Technical skills: Java, C# .NET, Azure API Management, Azure Functions, Azure DevOps.</li>
-                <li>Integration Development on enterprise ESB platform building stable integrations.</li>
-                <li>Documented technical and design specifications for integration solutions.</li>
-                <li>Developed and supported integration solutions for enterprise applications.</li>
-                <li>Reviewed designs and established integration design standards across teams.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <h3>Enterprise Integration Architect at Schneider Electric</h3>
-            <p>December 2022 - December 2023 | Novi Sad, Serbia</p>
-            <ul>
-                <li>Led technical projects requiring custom software design and implementation.</li>
-                <li>Developed and validated project technical strategies and implementation plans.</li>
-                <li>Provided technical guidance and support for project execution and design approval.</li>
-                <li>Prepared project analysis, design, functional and interface specifications.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <h3>Integration Developer at Devoteam Serbia</h3>
-            <p>August 2021 - December 2022 | Novi Sad, Serbia</p>
-            <ul>
-                <li>Developed TIBCO BW5 Fulfillment Orchestration Suite application exposed as SOAP service.</li>
-                <li>Designed Technical Products and prepared Bamboo pipelines for deployment.</li>
-                <li>Supported production incidents as a member of the EAI Team.</li>
-                <li>Modified and developed Tibco BW5 applications and product catalog for the 'Online Charging System' project.</li>
-            </ul>
-        </div>
+        <!-- Repeat the same structure for other job positions -->
     </section>
-
-    <section id="education">
-        <h2>Education</h2>
+    
+    <section id="education" class="content-section">
+        <h3>Education</h3>
         <p><strong>Faculty of Technical Sciences, University of Novi Sad</strong></p>
         <p>Bachelor's degree in Electrical and Electronics Engineering (2017 - 2021)</p>
     </section>
 
-    <section id="skills">
-        <h2>Skills & Expertise</h2>
+    <section id="certifications" class="content-section">
+        <h3>Certifications</h3>
+        <ul>
+            <li>TIBCO BusinessWorks™ Certified Professional</li>
+            <li>PSCC-1: Consulting Certificate</li>
+            <li>TIBCO BusinessWorks™ Certified Associate</li>
+            <li>MuleSoft Certified Developer - Level 1</li>
+            <li>Professional Scrum Master I</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h3>Skills & Expertise</h3>
         <ul>
             <li>Software AG WebMethods</li>
             <li>REST, SOAP Web Services</li>
@@ -97,27 +90,25 @@
         </ul>
     </section>
 
-    <section id="languages">
-        <h2>Languages</h2>
+    <section id="languages" class="content-section">
+        <h3>Languages</h3>
         <ul>
             <li>English: Full Professional</li>
             <li>German: Elementary</li>
         </ul>
     </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>TIBCO BusinessWorks™ Certified Professional</li>
-            <li>PSCC-1: Consulting Certificate</li>
-            <li>TIBCO BusinessWorks™ Certified Associate</li>
-            <li>MuleSoft Certified Developer - Level 1</li>
-            <li>Professional Scrum Master I</li>
-        </ul>
+    <section id="contact" class="content-section">
+        <h3>Contact</h3>
+        <p>Feel free to reach out to me via email or connect with me on LinkedIn and GitHub.</p>
+        <p>Email: <a href="mailto:stefanramac@gmail.com">stefanramac@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/stefanramac/" target="_blank">Stefan Ramač</a></p>
+        <p>GitHub: <a href="https://github.com/stefanramac" target="_blank">github.com/stefanramac</a></p>
+        <p>Phone: +381638393112</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Stefan Ramač | <a href="mailto:stefan@stefanramac.com">Contact Me</a></p>
+        <p>&copy; 2024 Stefan Ramač</p>
     </footer>
 </body>
 </html>
