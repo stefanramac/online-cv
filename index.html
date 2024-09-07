@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefan Ramač - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Stefan Ramač i navigacioni bar iznad hero sekcije -->
@@ -20,11 +21,11 @@
         </ul>
     </nav>
 
+    <!-- Hero section sa animacijom teksta -->
     <header class="hero-section">
         <div class="container">
             <div class="hero-text">
-                <h2>WEB DEVELOPER</h2>
-                <p>Welcome to my online CV</p>
+                <h2 id="dynamic-text">WEB DEVELOPER</h2>
             </div>
         </div>
     </header>
@@ -32,8 +33,11 @@
     <section id="experience" class="content-section">
         <h3>Experience</h3>
         
-        <p class="job-title">WebMethods Developer <span class="job-company">at TNation</span></p>
-        <p><span class="job-date">August 2024 - Present</span> | <span class="job-location">Belgrade, Serbia</span></p>
+        <p class="job-title">
+            <span class="position">WebMethods Developer</span> 
+            <span class="company">at TNation</span>
+        </p>
+        <p><span class="date">August 2024 - Present</span> | <span class="location">Belgrade, Serbia</span></p>
         <ul>
             <li>Developed and maintained REST and SOAP web services to support business needs.</li>
             <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
@@ -43,8 +47,11 @@
             <li>Troubleshot and resolved integration issues to maintain system integrity and performance.</li>
         </ul>
     
-        <p class="job-title">WebMethods Developer <span class="job-company">at EPICO-IT</span></p>
-        <p><span class="job-date">August 2024 - Present</span> | <span class="job-location">Copenhagen, Denmark</span></p>
+        <p class="job-title">
+            <span class="position">WebMethods Developer</span> 
+            <span class="company">at EPICO-IT</span>
+        </p>
+        <p><span class="date">August 2024 - Present</span> | <span class="location">Copenhagen, Denmark</span></p>
         <ul>
             <li>Developed and maintained REST and SOAP web services to support business needs.</li>
             <li>Utilized JSON and XML for effective data interchange between different systems.</li>
@@ -53,14 +60,90 @@
             <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
             <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
         </ul>
-
-        <!-- Repeat the same structure for other job positions -->
+    
+        <p class="job-title">
+            <span class="position">Integration Platform Developer</span> 
+            <span class="company">at NLB DigIT</span>
+        </p>
+        <p><span class="date">December 2023 - August 2024</span> | <span class="location">Belgrade, Serbia</span></p>
+        <ul>
+            <li>Developed and supported integration solutions for enterprise applications.</li>
+            <li>Created and reviewed technical design specifications for integration solutions.</li>
+            <li>Utilized Azure API Management, Azure Functions, and Azure DevOps to manage integration pipelines.</li>
+            <li>Collaborated with teams to establish integration design standards.</li>
+        </ul>
+    
+        <p class="job-title">
+            <span class="position">Enterprise Integration Architect</span> 
+            <span class="company">at Schneider Electric</span>
+        </p>
+        <p><span class="date">December 2022 - December 2023</span> | <span class="location">Novi Sad, Serbia</span></p>
+        <ul>
+            <li>Led technical projects involving custom software design and implementation.</li>
+            <li>Developed and validated technical strategies for project execution.</li>
+            <li>Provided guidance on software design, execution, and approval processes.</li>
+        </ul>
+    
+        <p class="job-title">
+            <span class="position">Integration Developer</span> 
+            <span class="company">at Devoteam Serbia</span>
+        </p>
+        <p><span class="date">August 2021 - December 2022</span> | <span class="location">Novi Sad, Serbia</span></p>
+        <ul>
+            <li>Developed TIBCO BW5 Fulfillment Orchestration Suite application as a SOAP service.</li>
+            <li>Designed technical products and prepared Bamboo pipelines for deployment.</li>
+            <li>Supported production incidents as part of the EAI Team.</li>
+            <li>Worked on the 'Online Charging System' project, modifying Tibco BW5 applications.</li>
+        </ul>
     </section>
     
     <section id="education" class="content-section">
         <h3>Education</h3>
         <p><strong>Faculty of Technical Sciences, University of Novi Sad</strong></p>
         <p>Bachelor's degree in Electrical and Electronics Engineering (2017 - 2021)</p>
+        
+        <h4>First Year:</h4>
+        <ul>
+            <li>Mathematics</li>
+            <li>Electronics and Telecommunication Development Tools 1 (C Programming Language)</li>
+            <li>History of Science and Technology</li>
+            <li>Fundamentals of Electrical Engineering</li>
+            <li>English Language - Elementary</li>
+            <li>Physics</li>
+            <li>Electronics and Telecommunication Development Tools 2 (C++ Programming Language)</li>
+            <li>Telecommunication Systems and Signals</li>
+            <li>Electronics</li>
+            <li>English Language - Lower</li>
+        </ul>
+        
+        <h4>Second Year:</h4>
+        <ul>
+            <li>Communication Systems</li>
+            <li>Communication Networks</li>
+            <li>Electronics and Telecommunication Development Tools 3 (Java Programming Language)</li>
+            <li>Digital Electronics</li>
+            <li>English Language - Intermediate</li>
+            <li>Microcomputer Electronics</li>
+            <li>Computer Digital System Design</li>
+            <li>Electronics and Telecommunication Development Tools 4 (Python Programming Language)</li>
+            <li>Independent Practical Project</li>
+            <li>English Language - Upper</li>
+        </ul>
+    
+        <h4>Third Year:</h4>
+        <ul>
+            <li>Sociology of Technique</li>
+            <li>Wireless Communications</li>
+            <li>Real Time Embedded Systems</li>
+            <li>Audio Engineering</li>
+            <li>Industrial Electronics</li>
+            <li>Computer-Aided Electronic Circuit Design</li>
+            <li>Video Technology</li>
+            <li>Wireless Sensor Networks</li>
+            <li>Telecommunication Electronics</li>
+            <li>Professional Practice</li>
+            <li>Bachelor Thesis</li>
+        </ul>
     </section>
 
     <section id="certifications" class="content-section">
@@ -101,14 +184,11 @@
     <section id="contact" class="content-section">
         <h3>Contact</h3>
         <p>Feel free to reach out to me via email or connect with me on LinkedIn and GitHub.</p>
-        <p>Email: <a href="mailto:stefanramac@gmail.com">stefanramac@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/stefanramac/" target="_blank">Stefan Ramač</a></p>
-        <p>GitHub: <a href="https://github.com/stefanramac" target="_blank">github.com/stefanramac</a></p>
-        <p>Phone: +381638393112</p>
-    </section>
+        <p>Email
 
-    <footer>
-        <p>&copy; 2024 Stefan Ramač</p>
-    </footer>
+: <a href="mailto:stefanramac@gmail.com">stefanramac@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/stefanramac/">linkedin.com/in/stefanramac</a></p>
+        <p>GitHub: <a href="https://github.com/stefanramac">github.com/stefanramac</a></p>
+    </section>
 </body>
 </html>

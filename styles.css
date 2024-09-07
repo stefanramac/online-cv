@@ -20,7 +20,7 @@ body {
 .header-left h1 {
     margin: 0;
     font-size: 2.5em;
-    font-family: 'Pacifico', cursive; /* Signature-like font */
+    font-family: 'Pacifico', cursive;
     color: #fff;
     line-height: 1.2;
 }
@@ -55,14 +55,13 @@ body {
 
 /* Hero section with background image */
 .hero-section {
-    background-image: url('background.jpg'); /* Background image */
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     color: #fff;
 }
 
@@ -76,15 +75,29 @@ body {
     text-align: center;
 }
 
+/* Increase font size for hero section by 30% */
 .hero-text h2 {
-    font-size: 4em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    font-size: 2.6em; /* Increased by 30% */
 }
 
-.hero-text p {
-    font-size: 1.5em;
-    margin: 0;
+/* Dynamic text animation */
+#dynamic-text {
+    font-size: 2.6em; /* Increased by 30% */
+    border-right: 2px solid #fff; /* Simulate cursor */
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(15) infinite alternate, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
 }
 
 /* Content section */
@@ -92,7 +105,6 @@ body {
     padding: 80px 20px;
     text-align: center;
     background-color: #1a1a1a;
-    color: #fff;
 }
 
 .content-section h3 {
@@ -100,50 +112,30 @@ body {
     color: #FFA500;
 }
 
-/* Job title and details */
-.job-title {
-    color: #FFA500; /* Main job title color - orange */
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.job-date {
-    color: #FFCC99; /* Lighter shade of orange for date */
-    font-size: 1.2em;
-}
-
-.job-location {
-    color: #FF9966; /* Medium shade of orange for location */
-    font-size: 1.2em;
-}
-
-.job-company {
-    color: #FF6600; /* Darker shade of orange for company */
-    font-size: 1.2em;
-}
-
 ul {
     list-style-type: square;
     padding-left: 20px;
-    color: #fff;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #1a1a1a;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-/* Link styles */
-a {
-    color: #ff6600;
+/* Experience section styles */
+.job-title {
+    font-size: 1.2em;
+    color: #FFA500; /* Main orange shade for job titles */
+    font-weight: bold;
 }
 
-a:hover {
-    color: #ff8533;
+.job-company {
+    color: #FF8C00; /* Slightly different orange for companies */
+    font-weight: bold;
+}
+
+.job-date, .job-location {
+    color: #FF7F50; /* Another orange shade for dates and locations */
+    font-weight: bold;
 }
