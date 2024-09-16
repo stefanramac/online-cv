@@ -11,6 +11,20 @@ body {
     font-size: 1.1em;
 }
 
+/* Animation for blinking cursor */
+#dynamic-text {
+    font-size: 2em;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
 /* Styling for the intro background image */
 .intro-background {
     position: fixed;
@@ -151,18 +165,6 @@ body {
     font-size: 2.8em;
 }
 
-#dynamic-text {
-    font-size: 2.8em;
-    border-right: 2px solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: blink 0.75s step-end infinite;
-}
-
-@keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: white; }
-}
 
 /* Content section with non-repeating background image and 25% visibility */
 .content-section {

@@ -11,6 +11,52 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    const words = ["Welcome   ", "Resume", "CV"]; // Reči koje treba ispisati
+    let currentWordIndex = 0;
+    let currentText = "";
+    let isDeleting = false;
+    let typingSpeed = 200; // Brzina kucanja
+    let pauseBetweenWords = 2000; // Pauza između promena reči
+
+    const dynamicTextElement = document.getElementById("dynamic-text");
+
+    function type() {
+        const fullText = words[currentWordIndex];
+
+        // Ako brišemo tekst
+        if (isDeleting) {
+            currentText = fullText.substring(0, currentText.length - 1);
+        } else {
+            currentText = fullText.substring(0, currentText.length + 1);
+        }
+
+        // Prikazivanje trenutnog teksta
+        dynamicTextElement.textContent = currentText;
+
+        // Ubrzaj kucanje pri brisanju
+        let typingDelay = isDeleting ? typingSpeed / 2 : typingSpeed;
+
+        // Ako je reč kompletno ispisana
+        if (!isDeleting && currentText === fullText) {
+            // Pauza pre nego što počne brisanje
+            typingDelay = pauseBetweenWords;
+            isDeleting = true;
+        } 
+        // Ako je reč kompletno izbrisana
+        else if (isDeleting && currentText === "") {
+            isDeleting = false;
+            currentWordIndex = (currentWordIndex + 1) % words.length; // Prelazak na sledeću reč
+            typingDelay = 500; // Pauza pre nego što počne ispisivanje sledeće reči
+        }
+
+        setTimeout(type, typingDelay);
+    }
+
+    // Počni animaciju kucanja
+    type();
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById("photo-modal");
     var btn = document.getElementById("see-photo-button");
     var span = document.getElementById("close-photo-modal");
