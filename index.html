@@ -3,120 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefan Ramač - Portfolio</title>
+    <title>Stefan Ramač - Online CV</title>
+    <link rel="icon" type="image/png" href="r.jpg">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+
+<!-- Background Image Section for Intro Animation -->
+<div id="intro-background" class="intro-background">
+    <img src="forest.jpg" alt="Forest Image" class="intro-image">
+    <img src="eightcode.png" alt="EightCode Logo" class="intro-logo">
+</div>
     <!-- Stefan Ramač i navigacioni bar iznad hero sekcije -->
     <div class="header-left">
         <h1>Stefan<br>Ramač</h1>
     </div>
-    <nav class="header-right">
-        <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Button for opening the pop-up menu -->
+<button id="menu-button" class="menu-button">☰</button>
+
+<!-- Pop-up Navigation Menu -->
+<nav id="popup-menu" class="popup-nav">
+    <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#photo">Photo</a></li>
+        <li><a href="#personal-info">Personal Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
     <!-- Hero section sa animacijom teksta -->
-    <header class="hero-section">
+    <header id="hero" class="hero-section">
         <div class="container">
             <div class="hero-text">
-                <h2 id="dynamic-text">WEB DEVELOPER</h2>
+                <!-- Dinamički tekst koji se menja -->
+                <h2>Online Resume</h2>
+                <h3>Scroll down</h3>
             </div>
         </div>
     </header>
 
-    <section id="experience" class="content-section">
-        <h3>Experience</h3>
-        
-        <p class="job-title">
-            <span class="position">WebMethods Developer</span> 
-            <span class="company">at TNation</span>
-        </p>
-        <p><span class="date">August 2024 - Present</span> | <span class="location">Belgrade, Serbia</span></p>
-        <ul>
-            <li>Developed and maintained REST and SOAP web services to support business needs.</li>
-            <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
-            <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
-            <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
-            <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
-            <li>Troubleshot and resolved integration issues to maintain system integrity and performance.</li>
-        </ul>
     
-        <p class="job-title">
-            <span class="position">WebMethods Developer</span> 
-            <span class="company">at EPICO-IT</span>
-        </p>
-        <p><span class="date">August 2024 - Present</span> | <span class="location">Copenhagen, Denmark</span></p>
-        <ul>
-            <li>Developed and maintained REST and SOAP web services to support business needs.</li>
-            <li>Utilized JSON and XML for effective data interchange between different systems.</li>
-            <li>Leveraged AWS cloud services for hosting and managing integration solutions.</li>
-            <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
-            <li>Created and managed APIs using Swagger and OpenAPI specifications.</li>
-            <li>Collaborated with cross-functional teams using Jira and Confluence for project management.</li>
-        </ul>
-    
-        <p class="job-title">
-            <span class="position">Integration Platform Developer</span> 
-            <span class="company">at NLB DigIT</span>
-        </p>
-        <p><span class="date">December 2023 - August 2024</span> | <span class="location">Belgrade, Serbia</span></p>
-        <ul>
-            <li>Developed and supported integration solutions for enterprise applications.</li>
-            <li>Created and reviewed technical design specifications for integration solutions.</li>
-            <li>Utilized Azure API Management, Azure Functions, and Azure DevOps to manage integration pipelines.</li>
-            <li>Collaborated with teams to establish integration design standards.</li>
-        </ul>
-    
-        <p class="job-title">
-            <span class="position">Enterprise Integration Architect</span> 
-            <span class="company">at Schneider Electric</span>
-        </p>
-        <p><span class="date">December 2022 - December 2023</span> | <span class="location">Novi Sad, Serbia</span></p>
-        <ul>
-            <li>Led technical projects involving custom software design and implementation.</li>
-            <li>Developed and validated technical strategies for project execution.</li>
-            <li>Provided guidance on software design, execution, and approval processes.</li>
-        </ul>
-    
-        <p class="job-title">
-            <span class="position">Integration Developer</span> 
-            <span class="company">at Devoteam Serbia</span>
-        </p>
-        <p><span class="date">August 2021 - December 2022</span> | <span class="location">Novi Sad, Serbia</span></p>
-        <ul>
-            <li>Developed TIBCO BW5 Fulfillment Orchestration Suite application as a SOAP service.</li>
-            <li>Designed technical products and prepared Bamboo pipelines for deployment.</li>
-            <li>Supported production incidents as part of the EAI Team.</li>
-            <li>Worked on the 'Online Charging System' project, modifying Tibco BW5 applications.</li>
-        </ul>
-    </section>
-    
+     
+
+<!-- Sekcija za iskustvo -->
+<section id="experience" class="content-section">
+    <h3>Experience</h3>
+
+    <!-- Experience Card 1 -->
+    <div class="card">
+        <div class="card-header">WebMethods Developer at EPICO-IT</div>
+        <div class="card-body">
+            <p class="job-info">August 2024 - Present | Copenhagen, Denmark</p>
+            <ul>
+                <li>Developed and maintained REST and SOAP web services to support business needs.</li>
+                <li>Utilized JSON and XML for effective data interchange between different systems.</li>
+                <li>Leveraged AWS cloud services for hosting and managing integration solutions, ensuring scalability and reliability.</li>
+                <li>Worked extensively with MongoDB for managing and retrieving data in a NoSQL environment.</li>
+                <li>Created and managed APIs using Swagger and OpenAPI specifications to standardize communication between services.</li>
+                <li>Collaborated with cross-functional teams using Jira and Confluence for efficient project management and documentation.</li>
+                <li>Troubleshot and resolved integration issues to maintain system integrity and performance.</li>
+            </ul>
+        </div>
+        <div class="card-skills">
+            <strong>Technical Skills:</strong>
+            <ul>
+                <li>Software AG WebMethods</li>
+                <li>REST, SOAP Web Services</li>
+                <li>JSON, XML</li>
+                <li>AWS Cloud</li>
+                <li>MongoDB</li>
+                <li>Swagger, OpenAPI</li>
+                <li>Jira, Confluence</li>
+                <li>Jenkins, Git</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience Card 2 -->
+    <div class="card">
+        <div class="card-header">Integration Platform Developer at NLB DigIT</div>
+        <div class="card-body">
+            <p class="job-info">December 2023 - August 2024 | Belgrade, Serbia</p>
+            <ul>
+                <li>Integration Development on enterprise ESB platform building stable integrations between various enterprise solutions.</li>
+                <li>Work with technical and functional groups to provide systems analysis and design in support of integration development.</li>
+                <li>Document technical and design specifications.</li>
+                <li>Develop and support integration solutions that integrate with enterprise applications.</li>
+                <li>Review designs of other members of the development team and help to establish integration design standards across the development teams.</li>
+                <li>Research cutting-edge technologies and apply to the daily job.</li>
+                <li>Production Support.</li>
+                <li>Identify and perform root cause analysis.</li>
+            </ul>
+        </div>
+        <div class="card-skills">
+            <strong>Technical Skills:</strong>
+            <ul>
+                <li>Java</li>
+                <li>C# .NET</li>
+                <li>Azure API Management</li>
+                <li>Azure Functions</li>
+                <li>Azure DevOps</li>
+                <li>Software AG WebMethods</li>
+                <li>SOAP Web Services</li>
+                <li>REST API</li>
+                <li>JSON, XML</li>
+                <li>Open API, Swagger</li>
+                <li>SQL (RDBMS)</li>
+                <li>JEE Platform</li>
+                <li>PL/SQL</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience Card 3 -->
+    <div class="card">
+        <div class="card-header">Integration Developer at Devoteam Serbia</div>
+        <div class="card-body">
+            <p class="job-info">Aug 2021 - Dec 2022 | Novi Sad, Vojvodina, Serbia · Hybrid</p>
+            <ul>
+                <li>A1 Serbia: Developed TIBCO BW5 Fulfillment Orchestration Suite application exposed as SOAP service, invoking backend systems mainly exposed through SOAP/HTTP and SOAP/JMS for the NewBSS project.</li>
+                <li>Designed Technical Products and prepared Bamboo pipelines for deployment on different environments.</li>
+                <li>Developed and refactored a set of BW5 applications and SMPP adapter for VAS (Value Added) Services.</li>
+                <li>Developed new solutions and functionalities, providing support during the testing period.</li>
+                <li>Supported production incidents as a member of the EAI Team.</li>
+                <li>A1 Macedonia: Worked on the ‘Online Charging System’ project, modifying and developing TIBCO BW5 applications and TIBCO Fulfillment Orchestration Suite product catalog to meet business requirements after the change of the Charging system in the telecommunications company.</li>
+            </ul>
+        </div>
+        <div class="card-skills">
+            <strong>Technical Skills:</strong>
+            <ul>
+                <li>TIBCO Administrator</li>
+                <li>Scrum</li>
+                <li>Atlassian Bamboo</li>
+                <li>JSON</li>
+                <li>SOAP</li>
+                <li>Java</li>
+                <li>REST APIs</li>
+                <li>Java Message Service (JMS)</li>
+                <li>Agile Web Development</li>
+                <li>MuleSoft Anypoint Platform</li>
+                <li>API Development</li>
+                <li>TIBCO BusinessWorks</li>
+                <li>TIBCO EMS</li>
+                <li>Software Development</li>
+                <li>Tortoise SVN</li>
+                <li>Continuous Integration and Continuous Delivery (CI/CD)</li>
+                <li>Service-Oriented Architecture (SOA)</li>
+                <li>Integration</li>
+                <li>SoapUI</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience Card 4 -->
+    <div class="card">
+        <div class="card-header">Integration Developer via Devoteam at A1 Srbija d.o.o.</div>
+        <div class="card-body">
+            <p class="job-info">Mar 2022 - Nov 2022 | Belgrade, Serbia</p>
+            <ul>
+                <li>Developed TIBCO BW5 Fulfillment Orchestration Suite application exposed as SOAP service, invoking backend systems mainly exposed through SOAP/HTTP and SOAP/JMS for the NewBSS project.</li>
+                <li>Designed Technical Products and prepared Bamboo pipelines for deployment on different environments.</li>
+                <li>Developed and refactored a set of BW5 applications and SMPP adapter for VAS (Value Added) Services.</li>
+                <li>Developed new solutions and functionalities, providing support during the testing period.</li>
+                <li>Supported production incidents as a member of the EAI Team.</li>
+                <li>Worked on the ‘Online Charging System’ project, modifying and developing TIBCO BW5 applications and TIBCO Fulfillment Orchestration Suite product catalog to meet business requirements after the change of the Charging system in the telecommunications company.</li>
+            </ul>
+        </div>
+        <div class="card-skills">
+            <strong>Technical Skills:</strong>
+            <ul>
+                <li>Scrum</li>
+                <li>Java</li>
+                <li>API Development</li>
+                <li>Software Development</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Education Card -->
     <section id="education" class="content-section">
         <h3>Education</h3>
-        <p><strong>Faculty of Technical Sciences, University of Novi Sad</strong></p>
-        <p>Bachelor's degree in Electrical and Electronics Engineering (2017 - 2021)</p>
-        
-        <h4>First Year:</h4>
-        <ul>
-            <li>Mathematics</li>
-            <li>Electronics and Telecommunication Development Tools 1 (C Programming Language)</li>
-            <li>History of Science and Technology</li>
-            <li>Fundamentals of Electrical Engineering</li>
-            <li>English Language - Elementary</li>
-            <li>Physics</li>
-            <li>Electronics and Telecommunication Development Tools 2 (C++ Programming Language)</li>
-            <li>Telecommunication Systems and Signals</li>
-            <li>Electronics</li>
-            <li>English Language - Lower</li>
-        </ul>
-        
-        <h4>Second Year:</h4>
+
+        <div class="card">
+            <div class="card-header">Faculty of Technical Sciences</div>
+            <div class="card-body">
+                <p class="bachelor">Bachelor's degree</p>
+                <p>Electrical and Electronics Engineering</p>
+                <p>Novi Sad, Serbia</p>
+                <p>(2017 - 2021)</p>
+                <h4 class="year-title">First Year:</h4>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Electronics and Telecommunication Development Tools 1 (C Programming Language)</li>
+                    <li>History of Science and Technology</li>
+                    <li>Fundamentals of Electrical Engineering</li>
+                    <li>English Language - Elementary</li>
+                    <li>Physics</li>
+                    <li>Electronics and Telecommunication Development Tools 2 (C++ Programming Language)</li>
+                    <li>Telecommunication Systems and Signals</li>
+                    <li>Electronics</li>
+                    <li>English Language - Lower</li>
+                </ul>
+
+
+        <h4 class="year-title">Second Year:</h4>
         <ul>
             <li>Communication Systems</li>
             <li>Communication Networks</li>
@@ -129,8 +223,8 @@
             <li>Independent Practical Project</li>
             <li>English Language - Upper</li>
         </ul>
-    
-        <h4>Third Year:</h4>
+
+        <h4 class="year-title">Third Year:</h4>
         <ul>
             <li>Sociology of Technique</li>
             <li>Wireless Communications</li>
@@ -144,51 +238,99 @@
             <li>Professional Practice</li>
             <li>Bachelor Thesis</li>
         </ul>
+            </div>
+        </div>
     </section>
 
     <section id="certifications" class="content-section">
         <h3>Certifications</h3>
-        <ul>
-            <li>TIBCO BusinessWorks™ Certified Professional</li>
-            <li>PSCC-1: Consulting Certificate</li>
-            <li>TIBCO BusinessWorks™ Certified Associate</li>
-            <li>MuleSoft Certified Developer - Level 1</li>
-            <li>Professional Scrum Master I</li>
-        </ul>
+        <div class="card">
+            <div class="card-header">Certifications</div>
+            <div class="card-body">
+                <ul>
+                    <li>TIBCO BusinessWorks™ Certified Professional</li>
+                    <li>PSCC-1: Consulting Certificate</li>
+                    <li>TIBCO BusinessWorks™ Certified Associate</li>
+                    <li>MuleSoft Certified Developer - Level 1</li>
+                    <li>Professional Scrum Master I</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="skills" class="content-section">
-        <h3>Skills & Expertise</h3>
-        <ul>
-            <li>Software AG WebMethods</li>
-            <li>REST, SOAP Web Services</li>
-            <li>JSON, XML</li>
-            <li>AWS Cloud</li>
-            <li>MongoDB</li>
-            <li>Swagger, OpenAPI</li>
-            <li>Jira, Confluence</li>
-            <li>Jenkins, Git</li>
-            <li>Java, C# .NET</li>
-            <li>Azure API Management, Azure Functions, Azure DevOps</li>
-        </ul>
-    </section>
+    <!-- New Photo Section -->
 
-    <section id="languages" class="content-section">
-        <h3>Languages</h3>
-        <ul>
-            <li>English: Full Professional</li>
-            <li>German: Elementary</li>
-        </ul>
-    </section>
+    <section id="photo" class="content-section">
+        <h3>Photo</h3>
+        <button id="see-photo-button">See Photo</button>
 
-    <section id="contact" class="content-section">
-        <h3>Contact</h3>
-        <p>Feel free to reach out to me via email or connect with me on LinkedIn and GitHub.</p>
-        <p>Email
-
-: <a href="mailto:stefanramac@gmail.com">stefanramac@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/stefanramac/">linkedin.com/in/stefanramac</a></p>
-        <p>GitHub: <a href="https://github.com/stefanramac">github.com/stefanramac</a></p>
+        <!-- Popup modal for the image -->
+        <div id="photo-modal" class="modal">
+            <span class="close" id="close-photo-modal">&times;</span>
+            <img class="modal-content" id="profile-pic" src="profilepic.jpg" alt="Profile Picture of Stefan Ramač">
+        </div>
     </section>
+    
+
+<!-- Personal Info Section -->
+<section id="personal-info" class="content-section">
+    <h3>Personal Info</h3>
+    <div class="personal-info-card">
+        <div class="personal-info-grid">
+            <!-- Citizenship Rectangle (Top Left) -->
+            <div class="personal-info-box">
+                <h4>Citizenship</h4>
+                <p>Croatian (EU)</p>
+                <p>Serbian</p>
+            </div>
+            <!-- Languages Rectangle (Top Right) -->
+            <div class="personal-info-box">
+                <h4>Languages</h4>
+                <p>English - C1 Level</p>
+                <p>German - A2 Level</p>
+            </div>
+            <!-- Driving License Rectangle (Bottom) -->
+            <div class="personal-info-box">
+                <h4>Driving License</h4>
+                <p>Category B</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section with Card and Grid -->
+<section id="contact" class="content-section">
+    <h3>Contact</h3>
+    <div class="contact-card">
+        <!--<div class="contact-card-header">Contact</div>-->
+        <div class="contact-grid">
+            <!-- Email Box -->
+            <div class="contact-box">
+                <p><strong>Email:</strong></p>
+                <p><a href="mailto:stefanramac@gmail.com">stefanramac@gmail.com</a></p>
+            </div>
+            <!-- Phone Box -->
+            <div class="contact-box">
+                <p><strong>Telephone Number:</strong></p>
+                <p><a href="tel:+381638393112">+381638393112</a></p>
+            </div>
+            <!-- LinkedIn Box -->
+            <div class="contact-box">
+                <p><strong>LinkedIn:</strong></p>
+                <p><a href="https://www.linkedin.com/in/stefanramac/" target="_blank">linkedin.com/in/stefanramac</a></p>
+            </div>
+            <!-- GitHub Box -->
+            <div class="contact-box">
+                <p><strong>GitHub:</strong></p>
+                <p><a href="https://github.com/stefanramac" target="_blank">github.com/stefanramac</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer>
+    <p>All Rights Reserved &copy; 2024 Stefan Ramač</p>
+    <button id="back-to-top">Back to Top⤴</button>
+</footer>
 </body>
 </html>
