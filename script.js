@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
     // Wait for 3 seconds (duration of the zoom-in animation) and then hide the intro
     setTimeout(function() {
         introBackground.style.display = "none"; // Hide the intro section
-        heroSection.style.opacity = "1"; // Pokaži glatko sadržaj
+        heroSection.style.opacity = "1"; // Slowly show content
     }, 3000); // 3 seconds matches the duration of the CSS animation
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const words = ["Welcome   ", "Resume", "CV"]; // Reči koje treba ispisati
+    const words = ["Welcome   ", "Resume", "CV"]; // Words
     let currentWordIndex = 0;
     let currentText = "";
     let isDeleting = false;
-    let typingSpeed = 200; // Brzina kucanja
-    let pauseBetweenWords = 2000; // Pauza između promena reči
+    let typingSpeed = 200;
+    let pauseBetweenWords = 2000;
 
     const dynamicTextElement = document.getElementById("dynamic-text");
 
@@ -30,19 +30,19 @@ document.addEventListener("DOMContentLoaded", function() {
             currentText = fullText.substring(0, currentText.length + 1);
         }
 
-        // Prikazivanje trenutnog teksta
+        // Showing current text
         dynamicTextElement.textContent = currentText;
 
-        // Ubrzaj kucanje pri brisanju
+        
         let typingDelay = isDeleting ? typingSpeed / 2 : typingSpeed;
 
-        // Ako je reč kompletno ispisana
+        // If word is fully writed
         if (!isDeleting && currentText === fullText) {
             // Pauza pre nego što počne brisanje
             typingDelay = pauseBetweenWords;
             isDeleting = true;
         } 
-        // Ako je reč kompletno izbrisana
+        // IF word is fully deleted
         else if (isDeleting && currentText === "") {
             isDeleting = false;
             currentWordIndex = (currentWordIndex + 1) % words.length; // Prelazak na sledeću reč
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(type, typingDelay);
     }
 
-    // Počni animaciju kucanja
+    // Start typing animation 
     type();
 });
 

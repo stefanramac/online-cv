@@ -89,6 +89,14 @@ body {
 }
 
 .header-left h1 {
+    transition: color 0.3s ease;
+}
+
+.header-left h1:hover {
+    color: #32CD32; /* Change this color to whatever you'd like for the hover effect */
+}
+
+.header-left h1 {
     margin: 0;
     font-size: 2.7em;
     font-family: 'Pacifico', cursive;
@@ -179,9 +187,19 @@ body {
     color: #fff;
 }
 
+/* Default styles for section titles */
 .content-section h3 {
     font-size: 2.7em;
-    color: #2E8B57; /* Forest green for section titles */
+    color: #fff; /* Forest green or your preferred color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect for section titles */
+.content-section h3:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Black transparent background */
+    color: #fff; /* White text on hover */
 }
 
 ul {
@@ -636,4 +654,29 @@ footer p {
         height: 100vh;
         object-fit: cover; /* This ensures that the image covers the entire screen */
     }
+}
+
+/* Eight Code - Orange */
+.card-header.eight-code {
+    background-color: #FFA500; /* Orange color */
+}
+
+/* NLB DigIT - Purple */
+.card-header.nlb-digit {
+    background-color: #800080; /* Purple color */
+}
+
+/* Schneider Electric - Green (different shade from div) */
+.card-header.schneider-electric {
+    background-color: #228B22; /* Forest green or a slightly different shade */
+}
+
+/* Devoteam - Pinkish-Red */
+.card-header.devoteam {
+    background-color: #FF4C4C; /* Pinkish-Red */
+}
+
+/* Epico IT - Dark Bordeaux */
+.card-header.epico-it {
+    background-color: #800020; /* Dark Bordeaux */
 }
